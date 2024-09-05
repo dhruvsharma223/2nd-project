@@ -21,7 +21,7 @@
              <heading></heading>
             <nav>
                 <ul>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#our_clints">Services</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -38,18 +38,33 @@
     </section>
      <div class="body_video">
          <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-    </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>    </div>
+     </div>
+     <div class="safety">
+       <div> <h1>First Work Then Payment </h1></div>
+              <div>
+                  <ol>
+                    <li>First we will do some sample work for you. </li>
+                    <li>Then you have to pay only a fraction of money.</li>
+                    <li>You have to pay the complete amount after the work has been completed.</li>
+                </ol>
+        
+              </div>
      </div>
 
+    
+
+
       <div class="container2">
-        <div class="text-side">
-            <h1>SOCIAL MEDIA MANAGEMENT</h1>
+        <div class="text-side"  >
+            
+                <h1>SOCIAL MEDIA MANAGEMENT</h1>
             <p>Social media management involves creating, scheduling, analyzing, and engaging with content posted on social media platforms to enhance brand visibility, foster community interaction, and achieve marketing goals.</p>
+          
         </div>
         <div class="image-side">
                     <figure>
-                         <img src="images/1.jpg" alt="Image 1">
+                         <img src="images/1.jpg" alt="Image 1" class="slide-image">
                     </figure>
         </div>
       </div>
@@ -61,7 +76,7 @@
         </div>
         <div class="image-side">
                     <figure>
-                         <img src="images/2.png" alt="Image 2">
+                         <img src="images/2.png" alt="Image 2" class="slide-image">
                     </figure>
         </div>
       </div>
@@ -73,7 +88,7 @@
         </div>
         <div class="image-side">
                     <figure>
-                         <img src="images/4.png" alt="Image 3">
+                         <img src="images/4.png" alt="Image 3" class="slide-image">
                     </figure>
         </div>
       </div>
@@ -85,15 +100,20 @@
         </div>
         <div class="image-side">
            <figure>
-                         <img src="images/3.jpg" alt="Image 4">
+                         <img src="images/3.jpg" alt="Image 4" class="slide-image">
                     </figure>
         </div>
       </div>
 
+      <div class="our_clints" id="our_clints">
+        <h1>Our Clints & Portfolio</h1>
+      </div>
+
     <section id="services">
         <div class="container">
-            <h1>Our Clints & Portfolio</h1>
-            <div class="service services-1">
+
+            <div class="container4_style">
+                  <div class="service services-1">
                 <h2>Social Media Management</h2>
                 <h3>We have managed social media accounts of many businesses and People to increase engagement and grow their audience.</h3>
             </div>
@@ -124,8 +144,12 @@
            </a>
         </div>
     </div>
+            </div>
+            
+          
 
-            <div class="service">
+    <div class="container4_style">
+         <div class="service">
                 <h2>Content Creation</h2>
                 <h3>We have created high-quality content that resonates with target audience on these platforms.</h3>
             </div>
@@ -156,8 +180,11 @@
            </a>
         </div>
     </div>
-                 
-            <div class="service">
+    </div>
+
+
+            <div class="container4_style">
+                 <div class="service">
                 <h2>Advertising Campaigns</h2>
                 <h3>We have designed effective advertising campaigns to boost online presence of many e-commerce stores.</h3>
             </div>
@@ -188,7 +215,10 @@
            </a>
         </div>
     </div>
-             <div class="service">
+            </div>  
+
+            <div class="container4_style">
+                <div class="service">
                 <h2>Website Devlopment</h2>
                 <h3>We have designed and developed websites that helps increases online visibility, attracts customers,
                      builds credibility, showcases products/services.</h3>
@@ -220,6 +250,10 @@
            </a>
         </div>
     </div>
+            </div>
+
+           
+             
         </div>
     </section>
 
@@ -256,6 +290,95 @@
 
 
    <style>
+
+
+    .container4 {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.container4.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+    
+.text-side {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.text-side.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+    .image-side {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+    transform: translateX(100%);
+    transition: transform 2s ease-out;
+    opacity: 0;
+    transition: opacity 2s ease-out;
+}
+
+.image-side.visible .slide-image {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+    .safety{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        height: 20rem;
+        flex-direction: column;
+        background-color: #f4f4f4;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+    .safety ol{
+        height: 8rem;
+        margin-left: 9rem;
+       
+    }
+    .safety ol li{
+      margin-top: 1.5rem;  
+    }
+    .safety h1{
+        margin-left: 9rem;
+    }
+
+   
+
     .services-1{
         margin-top: 60px;
     }
@@ -281,10 +404,16 @@
     background-color: #f4f4f4;
     border: 1px solid #ccc;
     border-radius: 5px;
-    max-height: 510px;
+    max-height: 510px; 
+        transition: transform 0.5s, box-shadow 0.5s;
   
-    
 }
+
+.boxa:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
 .boxa1 img{
   max-height: 220px;
 }
@@ -338,15 +467,14 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height:100vh;
-    background-color: #f4f4f4;
-    margin-bottom:30vh;
+    align-items: start;
+    height:120vh;
+    background-color: #ffffff;
 }
     
     .video-container {
     position: relative;
-    width: 50%;
+    width: 80%;
     aspect-ratio: 1;
     max-width: 8000px;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
@@ -372,6 +500,7 @@
     width: 90%;
     margin-top: 5%;
     margin-left: 5%;
+    margin-bottom: 12%;
    
    
 }
@@ -391,6 +520,7 @@
 .text-side h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    
 }
 
 .text-side p {
@@ -408,6 +538,14 @@
     max-width: 100%;
     height: auto;
     display: block;
+    border-radius: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+
+}
+
+.image-side img:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
     body {
@@ -459,7 +597,7 @@ header nav ul li a {
 }
 
 #hero {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     padding: 5rem 0;
     text-align: center;
 }
@@ -479,6 +617,15 @@ header nav ul li a {
     margin: 0 auto;
     
     padding: 0 2rem;
+}
+.our_clints{
+    background-color: #f4f4f4;
+    margin-bottom: 2rem;
+    height: 80px;
+    padding-top: 17px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container_nav{
     max-width: 1400;
@@ -500,7 +647,7 @@ header nav ul li a {
     background-color: #fff;
     padding: 2rem 0;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 #services h2 {
@@ -512,7 +659,7 @@ header nav ul li a {
 }
 
 .service h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 #about {
@@ -581,6 +728,45 @@ footer {
 
             window.open(whatsappURL, '_blank');
         }
+
+
+
+
+        document.addEventListener('scroll', function() {
+    const images = document.querySelectorAll('.image-side');
+
+    images.forEach(image => {
+        const rect = image.getBoundingClientRect();
+       if (rect.top < window.innerHeight && rect.bottom > 0 && !image.classList.contains('visible')) {
+            image.classList.add('visible');
+        }
+    });
+});
+
+
+
+document.addEventListener('scroll', function() {
+    const containers = document.querySelectorAll('.text-side');
+
+    containers.forEach(container => {
+        const rect = container.getBoundingClientRect();
+         if (rect.top < window.innerHeight && rect.bottom > 0 && !container.classList.contains('visible')) {
+            container.classList.add('visible');
+        }
+    });
+});
+
+
+document.addEventListener('scroll', function() {
+    const slideContainers = document.querySelectorAll('.container4');
+
+    slideContainers.forEach(container => {
+        const rect = container.getBoundingClientRect();
+         if (rect.top < window.innerHeight && rect.bottom > 0 && !container.classList.contains('visible')) {
+            container.classList.add('visible');
+        }
+    });
+});
     </script>
 
 
